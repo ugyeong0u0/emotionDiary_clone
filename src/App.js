@@ -4,11 +4,12 @@ import Home from "./pages/Home";
 import Edit from "./pages/Edit";
 import Diary from "./pages/Diary";
 import New from "./pages/New";
+import NavigationBtn from "./components/NavigationBtn";
 import RouterTest from "./components/RouterTest";
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <BrowserRouter>
         <h2>App.js</h2>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,8 +18,10 @@ function App() {
           <Route path="/diary" element={<Diary />} />
         </Routes>
         <RouterTest />
-      </div>
-    </BrowserRouter>
+        <NavigationBtn />
+        <div />
+      </BrowserRouter>
+    </div>
   );
 }
 
