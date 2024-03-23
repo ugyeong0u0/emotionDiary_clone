@@ -1,0 +1,26 @@
+.Header {
+  display: flex; /* 가로 방향으로 배치 */
+  align-items: center; /*컴포넌트 안 요소들이 수직 수평으로 배치되게*/
+  padding: 20px 0px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+/*Header라는 클래스네임 갖는 요소 바로 아래에 있는div*/
+.Header > div {
+  display: flex;
+}
+
+.Header .Header_center {
+  width: 50%;
+  font-size: 25px;
+  justify-content: center;
+  /* 위에 Header > div 처럼 속성이 felx로 설정되어있을 때 
+  자식들이 배치되는 위치를 가운데로 단 width %에 따라서 */
+}
+.Header .Header_left {
+  width: 25%;
+  justify-content: flex-start;
+}
+.Header .Header_right {
+  width: 25%;
+  justify-content: flex-end;
+}
