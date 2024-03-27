@@ -1,15 +1,12 @@
-import { useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Edit = () => {
-  const [params, setParams] = useSearchParams();
+  const params = useParams();
   return (
     <div>
       <h1>
         edit
-        <p>
-          이곳은 수정페이지 입니다.
-          {params.get("value")}
-        </p>
+        <p>{params.id}이곳은 수정페이지 입니다.</p>
       </h1>
     </div>
   );
