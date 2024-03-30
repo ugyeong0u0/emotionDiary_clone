@@ -4,7 +4,7 @@
   border: none;
   border-radius: 5px;
   padding: 10px, 20px; /**/
-  font-size: 50px;
+  font-size: 30px;
   white-space: nowrap; /* 화면이 줄어도 글자 줄바꿈x */
 }
 .Button_positive {
